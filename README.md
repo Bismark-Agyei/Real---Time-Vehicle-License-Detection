@@ -30,7 +30,7 @@ SETUP
 ## Demo
 
 
-
+https://github.com/Bismark-Agyei/Real---Time-Vehicle-License-Detection.git
 
 
 
@@ -43,7 +43,6 @@ The video used in the tutorial can be downloaded [here](https://drive.google.com
 A Yolov8 pre-trained model (YOLOv8n) was used to detect vehicles.
 
 A licensed plate detector was used to detect license plates. The model was trained with Yolov8 using [this dataset](https://universe.roboflow.com/roboflow-universe-projects/license-plate-recognition-rxg4e/dataset/4). 
-- The model is available [here](https://drive.google.com/file/d/1Zmf5ynaTFhmln2z7Qvv-tgjkWQYQ9Zdw/view?usp=sharing).
 
 ## Dependencies
 
@@ -85,3 +84,6 @@ python visualize.py
 
 5. YOLOv8 License Plate Detection
 A second pretrained YOLOv8 model is used to detect license plates within the same frame. This model is optimized for small object detection.
+
+
+ Output video: https://drive.google.com/file/d/1AUiBF0aTpr_QoT4ux9Z6n8nGExUSmZKy/view?usp=drive_link
