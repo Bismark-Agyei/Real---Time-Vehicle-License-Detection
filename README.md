@@ -1,7 +1,14 @@
 # Real---Time-Vehicle-License-Detection
-Real-time vehicle detection system using YOLOv8 and OpenCV to identify and track vehicles in video streams. Integrates EasyOCR for license plate recognition and  sort module  for stable tracking. Designed for high-speed, frame-by-frame analysis in dynamic environments.
+This is a capstone project for our Robotics and Computer Vision class at KNUST,which was  presented Dr.James Okae.
+We were to design a CV system.I developed a system for stolen car detection in highways in video form.
+
+
+This project was aimed at helping with stolen car recovery in Ghana
+A pretrained (YOLOv8n) model was used for vehicle detection, while a license-plate detection model was fine-tuned on a custom dataset
+
+
 Pipeline Overview
-This system performs real-time vehicle and license plate recognition using a multi-stage computer vision pipeline. The YOLOv8 models used for detection are pretrained and fine-tuned for inference.
+This system performs real-time vehicle and license plate recognition using a multi-stage computer vision pipeline. 
 
 1. Video Input
 The system ingests video streams (live or recorded) and processes frames sequentially for object detection and tracking.
@@ -13,16 +20,17 @@ Each frame is passed through a pretrained YOLOv8 model to detect vehicles. Bound
 Detections are filtered based on confidence scores and class labels to retain only relevant vehicle types (e.g., cars, trucks, motorbikes).
 
 SORT Tracking
-The Simple Online and Realtime Tracking (SORT) algorithm assigns unique IDs to each vehicle and tracks them across frames using  bounding box association.
+The Simple Online and Realtime Tracking (SORT) algorithm assigns unique IDs to each vehicle and tracks them across frames.
 
 Plate ↔ Vehicle Association
-License plate detections are matched to their corresponding vehicle bounding boxes based on spatial proximity and overlap logic.
+License plate detections are matched to their corresponding vehicle bounding boxes 
 
 7. Plate Cropping
 Once associated, the license plate region is cropped from the frame for preprocessing and OCR.
 
 8. Grayscale + Thresholding → OCR → CSV Output
-The cropped plate image is converted to grayscale and thresholded to enhance text clarity. EasyOCR is then applied to extract alphanumeric characters. Recognized plate numbers, along with timestamps and vehicle IDs, are saved to a CSV file for logging and analysis.
+The cropped plate image is converted to grayscale and thresholded to enhance text clarity.
+ EasyOCR is then applied to extract alphanumeric characters. Recognized plate numbers, along with timestamps and vehicle IDs, are saved to a CSV file for logging and analysis.
 
 
 SETUP
