@@ -95,6 +95,8 @@ A second pretrained YOLOv8 model is used to detect license plates within the sam
 
 
  Output video: https://drive.google.com/file/d/1AUiBF0aTpr_QoT4ux9Z6n8nGExUSmZKy/view?usp=drive_link
+
+
 Acknowledgment
 Inspired by tutorials from @Computer Vision Engineer on YouTube.  
 License plate detection dataset preparation and fine-tuning were independently developed
