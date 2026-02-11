@@ -1,5 +1,5 @@
 # Real---Time-Vehicle-License-Detection
-This is a capstone project for our Robotics and Computer Vision class at KNUST,which was  presented Dr.James Okae.
+This is a capstone project for our Robotics and Computer Vision class at KNUST,which was  presented to Dr.James Okae.
 We were to design a CV system.I developed a system for stolen car detection in highways in video form.
 
 
@@ -95,3 +95,6 @@ A second pretrained YOLOv8 model is used to detect license plates within the sam
 
 
  Output video: https://drive.google.com/file/d/1AUiBF0aTpr_QoT4ux9Z6n8nGExUSmZKy/view?usp=drive_link
+Acknowledgment
+Inspired by tutorials from @Computer Vision Engineer on YouTube.  
+License plate detection dataset preparation and fine-tuning were independently developed
